@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-//primeNG
-import { ButtonModule } from 'primeng/button';
+//modules
+// import { PrimeNgModule } from './prime-ng/prime-ng.module';
+import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, ButtonModule],
+  imports: [BrowserModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent],
 })
