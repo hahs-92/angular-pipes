@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-commons',
@@ -29,6 +30,35 @@ export class NoCommonsComponent {
     age: 29,
     address: 'calle 11',
   };
+
+  heroes = [
+    {
+      name: 'vegeta',
+      power: 123,
+    },
+    {
+      name: 'batman',
+      power: 12,
+    },
+    {
+      name: 'kakashi',
+      power: 154,
+    },
+    {
+      name: 'naruto',
+      power: 234,
+    },
+  ];
+
+  //async
+  //creamos un observable que emite valores
+  myObservable = interval(5000); // 0,1,2,3,4,5 ..
+
+  myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('promise resolve');
+    }, 3000);
+  });
 
   changeName() {
     this.name = 'jess';
