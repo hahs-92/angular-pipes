@@ -23,6 +23,13 @@ export class NoCommonsComponent {
     female: 'invitarla',
   };
 
+  //keyvalue
+  person = {
+    name: 'Lolo',
+    age: 29,
+    address: 'calle 11',
+  };
+
   changeName() {
     this.name = 'jess';
     this.genre = 'female';
