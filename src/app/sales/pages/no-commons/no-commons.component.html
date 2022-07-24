@@ -22,4 +22,20 @@
       <p-button (onClick)="deletClient()" label="Eliminar Cliente"></p-button>
     </p-fieldset>
   </div>
+
+  <div class="col md:col-6 sm:col-9">
+    <p-fieldset legend="Slice pipe" [toggleable]="true">
+      <p>original</p>
+      <pre>{{ clients }}</pre>
+
+      <b>slice:0:2</b>
+      <pre>{{ clients | slice: 0:2 }}</pre>
+
+      <b>slice:1:2</b>
+      <pre>{{ clients | slice: 1:2 }}</pre>
+
+      <b> alex | slice:0:2</b>
+      <pre>{{ name | slice: 0:2 }}</pre>
+    </p-fieldset>
+  </div>
 </section>

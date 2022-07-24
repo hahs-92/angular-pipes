@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NoCommonsComponent {
   //i18 plural
-  clients = ['alex', 'jess', 'jose'];
+  clients = ['alex', 'jess', 'jose', 'jinx', 'ekko'];
   mapClients = {
     '=0': 'no tenemos ningun cliente esperando',
     '=1': 'tenemos 1 cliente esperando',
