@@ -36,11 +36,17 @@ export class OrdersComponent implements OnInit {
     },
   ];
 
+  orderBy: string = '';
+
   constructor() {}
 
   ngOnInit(): void {}
 
   toggleUppercase() {
     this.isUppercase = !this.isUppercase;
+  }
+
+  changeOrder(value: string) {
+    this.orderBy = value;
   }
 }

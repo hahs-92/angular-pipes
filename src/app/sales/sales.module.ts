@@ -10,6 +10,7 @@ import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { OrdersComponent } from './pages/orders/orders.component';
 import { IsFlyPipe } from './pipes/is-fly.pipe';
+import { OrderPipe } from './pipes/order.pipe';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { IsFlyPipe } from './pipes/is-fly.pipe';
     OrdersComponent,
     UppercasePipe,
     IsFlyPipe,
+    OrderPipe,
   ],
   imports: [CommonModule, PrimeNgModule],
   exports: [
