@@ -1,1 +1,10 @@
-<p>orders works!</p>
+<section class="text-layout">
+  <h1>Pipes personalizados</h1>
+
+  <p>
+    {{ "Pipes" | myuppercase: isUppercase }} creados por
+    {{ "nosotros" | myuppercase: isUppercase }}
+  </p>
+
+  <p-button (onClick)="toggleUppercase()" label="Toggle Uppercase"></p-button>
+</section>
